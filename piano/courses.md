@@ -61,3 +61,7 @@ C大调音阶，三连音，穿指
 # class 10
 
 查尔达什 梦中的婚礼
+
+# class 11
+
+查尔达什 梦婚 gnossienne-No.1(satie)
