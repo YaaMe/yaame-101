@@ -65,3 +65,7 @@ C大调音阶，三连音，穿指
 # class 11
 
 查尔达什 梦婚 gnossienne-No.1(satie)
+
+# class 12
+
+Sonata No.10 OP.14 No.2
