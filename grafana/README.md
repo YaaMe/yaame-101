@@ -46,23 +46,23 @@ grafana的前后端有设定interface规范，后端会通过main里的datasourc
 
 #### ConfigEditor
 
-[](_images/configeditor.png)
+![](_images/configeditor.png)
 
 ConfigEditor 定义datasource的配置界面，即PluginContext参数，比如AK/SK 查询的endpoint等。该值会伴随每一次查询被传递到后端的PluginContext。
 
 #### QueryEditor
 
-[](_images/queryeditor.png)
+![](_images/queryeditor.png)
 
 QueryEditor 定义查询面板，具体dom可以自己编，只看接口，这里你会拿到onchange(state)和onrunquery()两个事件trigger和query，即你自己写的value，通过onchange接口传递state挂给panel的下半部editor的控制器，调用onrunquery会将state做表达式解析（比如$value/$time等grafana自带的变量上下文）然后做成queryrequest发往后端。清楚前端的话不难理解，当你更换datasource时此处的state会被重置，所以state仅挂靠在下半部Query的dom结构上。所以这里会受到datasource的queryoptions影响。全局变量也仅在query执行时会被带入解析（此时会拿到全局变量），而且和隔壁的transform是两个不相关的dom。
 
-[](_images/queryeditor1.png)
+![](_images/queryeditor1.png)
 
 query被提交给后端查询后返回，得到一个[]dataframe数组，交给隔壁transform进行无状态函数处理，把最后的[]dataframe扔给panel绘图，这个数组[]dataframe就是你tableview看到的东西的前一跳，为什么是前一跳后面解释。
 
 #### VariableQueryEditor
 
-[](_images/variablequeryeditor.png)
+![](_images/variablequeryeditor.png)
 
 variable 全局变量添加时，选中该datasource时的变量部分，仅红框贴出的部分。
 
@@ -70,7 +70,7 @@ grafana的全局变量会体现在地址栏连接上，作为全局state，在�
 
 ## panel图表组件
 
-[](_images/panel.png)
+![](_images/panel.png)
 
 panel类型插件，比如你看到的table啦，time series，柱状图之类的都算此类，这个前端写组件的同学就更熟悉了……接受一个[]data数据选择自己要的数据格式，然后绘图即可，主面板不需要任何其他全局变量传入，只有隔壁config部分会拿到全局变量和transform完传入的[]data做最后的value mapping，然后就扔进图表的panel绘图了。
 

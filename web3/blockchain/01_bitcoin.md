@@ -31,7 +31,7 @@ bitcoin上的每一笔交易都会得到一笔交易的hashid，我们可以随�
 
 这笔交易记录的是这么一件事
 
-[](_images/bitcoin_example0.png)
+![](_images/bitcoin_example0.png)
 
 这是提交给节点的原始json字符串
 
