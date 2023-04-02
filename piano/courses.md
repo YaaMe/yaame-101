@@ -48,7 +48,7 @@ C大调音阶，三连音，穿指
 
 # class 8
 
-卡农 
+卡农
 
 # class 9
 
@@ -66,6 +66,12 @@ C大调音阶，三连音，穿指
 
 查尔达什 梦婚 gnossienne-No.1(satie)
 
-# class 12
+# class 12 - 15
 
-Sonata No.10 OP.14 No.2
+贝多芬 [Sonata No.10 OP.14 No.2](https://www.youtube.com/watch?v=fQqNsTUvqCY)
+
+# class 16
+
+贝多芬Sonata No.10 OP.14 No.2 进度一半
+
+Chopin: [Contredanse](https://www.youtube.com/watch?v=vMB_zSYI2rc)
